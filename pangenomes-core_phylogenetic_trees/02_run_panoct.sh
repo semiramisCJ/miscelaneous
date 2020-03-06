@@ -15,7 +15,7 @@ rename gbk gbf *gbk
 ls *.gbf > gbkList.txt
 while read currGBK
 do
-	python /my/path/to_scripts/fromMultiGBK_extractAllFAA_input-panOCT_noBED_allowDrafts.py -i $wDir/$currGBK -g $currGBK -o $wDir
+	python fromMultiGBK_extractAllFAA_input-panOCT_noBED_allowDrafts.py -i $wDir/$currGBK -g $currGBK -o $wDir
 done < gbkList.txt
 
 # Cat all the FAA files and delete intermediate files
@@ -35,10 +35,10 @@ cd "$panoctDir"
 perl /my/installation/path/panoct.pl -t ../all_vs_all.blastp.tab -f ../genomesList_panoct.txt -g ../all_proteomes.attributes -P ../all_proteomes.faa -S Y -L 0.80 -i 65 -V Y -T -c 100
 
 # Parse panoct results to get coreOrth and single genes
-python /my/path/to_scripts/parsePanOCTresults-allowDrafts_addcoreGFlist.py -i $wDir/ -p $panoctDir/ -s $wDir/genomesList_panoct.txt
+python parsePanOCTresults-allowDrafts_addcoreGFlist.py -i $wDir/ -p $panoctDir/ -s $wDir/genomesList_panoct.txt
 
 # Extract genes by gene family; only for core genes
 coreDir="$panoctDir/coreProts"
 mkdir "$coreDir"
-python /my/path/to_scripts/split_faa_fna_ByPanocGeneFam_v2.py -f $wDir/ -a $wDir/all_proteomes.faa -p $wDir/all_proteomes.attributes -g $panoctDir/coreGeneFamilies_panoct.txt -o $coreDir/
+python split_faa_fna_ByPanocGeneFam.py -f $wDir/ -a $wDir/all_proteomes.faa -p $wDir/all_proteomes.attributes -g $panoctDir/coreGeneFamilies_panoct.txt -o $coreDir/
 
