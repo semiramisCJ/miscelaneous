@@ -3,6 +3,11 @@ Diverse scripts for comparative genomics on bacteria.
 
 Example file names and paths are provided; if you use these scripts, please make the appropriate changes. Also, check if the required software is available in your computer, and if the number of threads used make sense for your particular situation.
 
+The examples are done for different genomes / genus / species
+
+Name consistency is inside folders; variable names are used for most of the parts for easy editing.
+
+
 # Dependencies
 Third-party software is called under the "/my/installation/path/" or directly; depends on the installation we had at the moment.
 
@@ -12,19 +17,19 @@ A (non-exhaustive) list of dependencies (they vary by script):
 * samtools
 * bamtools
 * blast+
-* python >= 2.7 with argrparse and SeqIO (from BioPython)
+* python3 with argrparse and SeqIO (from BioPython)
 * prokka
 * panoct
-* revtrans
-* clustal omega
+* RevTrans
+* Clustal Omega
 * PhiPack
 * FASconCAT-G
-* raxml
+* RAxML
 * GET_HOMOLOGUES
 * GET_PHYLOMARKERS
-* mafft
+* MAFFT
 * IQ-TREE
-
+* R with MLSTaR and purrr
 
 
 
