@@ -1,5 +1,5 @@
 # miscelaneous scripts
-Diverse scripts for comparative genomics on various organisms.
+Diverse scripts for comparative genomics on bacteria.
 
 Example file names and paths are provided; if you use these scripts, please make the appropriate changes. Also, check if the required software is available in your computer, and if the number of threads used make sense for your particular situation.
 
