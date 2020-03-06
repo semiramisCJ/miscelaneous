@@ -11,13 +11,13 @@ Name consistency is inside folders; variable names are used for most of the part
 # Dependencies
 Third-party software is called under the "/my/installation/path/" or directly; depends on the installation we had at the moment.
 
-A (non-exhaustive) list of dependencies that vary by script:
+A (non-exhaustive) list of **dependencies that vary by script**:
 * bowtie2
 * bwa
 * samtools
 * bamtools
 * blast+
-* python3 with argrparse, BioPython, click
+* python3 with argrparse, BioPython, networkx, click
 * perl
 * prokka
 * panoct
@@ -30,7 +30,7 @@ A (non-exhaustive) list of dependencies that vary by script:
 * GET_PHYLOMARKERS
 * MAFFT
 * IQ-TREE
-* R with MLSTaR and purrr
+* R with MLSTaR, purrr
 
 
 
