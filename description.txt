@@ -1,0 +1,1 @@
+This is a repository with diverse scripts for comparative genomics on various organisms, from alignment coverage to pangenomes and phylogenetic trees
