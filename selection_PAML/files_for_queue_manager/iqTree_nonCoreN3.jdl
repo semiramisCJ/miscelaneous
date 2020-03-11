@@ -1,0 +1,12 @@
+#Description of this array job file
+#$ -S /bin/bash
+#$ -cwd
+#$ -l qname=My.queue.name
+#$ -e iqtree_n3.err
+#$ -o iqtree_n3.out
+#$ -N iqtree_n3
+#What are we going to run
+source /etc/bashrc
+SEEDFILE=taskList.txt
+SEED=$(cat $SEEDFILE | head -n $SGE_TASK_ID | tail -n 1)
+$SEED

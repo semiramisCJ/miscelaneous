@@ -1,0 +1,12 @@
+#Description of this array job file
+#$ -S /bin/bash
+#$ -cwd
+#$ -l qname=My.queue.name
+#$ -e iqTree_coreProts.err
+#$ -o iqTree_coreProts.out
+#$ -N iqTree_coreProts
+#What are we going to run
+source /etc/bashrc
+SEEDFILE=taskList.txt
+SEED=$(cat $SEEDFILE | head -n $SGE_TASK_ID | tail -n 1)
+$SEED
