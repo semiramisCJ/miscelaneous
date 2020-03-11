@@ -30,8 +30,9 @@ A (non-exhaustive) list of **dependencies that vary by script**:
 * GET_PHYLOMARKERS
 * MAFFT
 * IQ-TREE
-* R with MLSTaR, purrr
-
+* Trimal 
+* R with MLSTaR, purrr, readr, dplyr
+* Fasta2Phylip.pl obtained from https://github.com/josephhughes/Sequence-manipulation/blob/master/Fasta2Phylip.pl
 
 
 # License
