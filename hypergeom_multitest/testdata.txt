@@ -1,0 +1,43 @@
+salino	17	2417	41	4296	ATP-binding cassette (ABC) transporter complex
+salino	3	2417	3	4334	bacterial biofilm matrix
+salino	4	2417	6	4331	bacterial-type flagellum basal body
+salino	2	2417	3	4334	bacterial-type flagellum filament
+salino	3	2417	7	4330	beta-galactosidase complex
+salino	1	2417	1	4336	cell projection
+salino	7	2417	13	4324	cell surface
+salino	6	2417	11	4326	cell wall
+salino	1	2417	1	4336	centrosome
+salino	1	2417	1	4336	chloroplast
+salino	1	2417	6	4331	chromosome
+salino	2	2417	3	4334	cytochrome complex
+salino	153	2417	273	4064	cytoplasm
+salino	1	2417	1	4336	cytoskeleton
+salino	1	2417	4	4333	cytosol
+salino	7	2417	9	4328	DNA polymerase III complex
+salino	6	2417	8	4329	endospore-forming forespore
+salino	2	2417	7	4330	excinuclease repair complex
+salino	1	2417	1	4336	extracellular matrix
+salino	26	2417	48	4289	extracellular region
+salino	2	2417	2	4335	extrachromosomal circular DNA
+salino	1	2417	4	4333	host cell cytoplasm
+salino	1705	2417	3013	1324	integral component of membrane
+salino	14	2417	27	4310	integral component of plasma membrane
+salino	29	2417	52	4285	membrane
+salino	2	2417	2	4335	molybdopterin synthase complex
+salino	2	2417	7	4330	nitrate reductase complex
+salino	1	2417	1	4336	nucleus
+salino	5	2417	9	4328	outer membrane
+salino	3	2417	4	4333	outer membrane-bounded periplasmic space
+salino	1	2417	1	4336	oxoglutarate dehydrogenase complex
+salino	5	2417	7	4330	periplasmic space
+salino	378	2417	685	3652	plasma membrane
+salino	4	2417	5	4332	primosome complex
+salino	3	2417	5	4332	proton-transporting ATP synthase complex, coupling factor F(o)
+salino	1	2417	3	4334	respirasome
+salino	5	2417	12	4325	ribosome
+salino	1	2417	1	4336	small ribosomal subunit
+salino	1	2417	2	4335	spore wall
+salino	1	2417	1	4336	T=4 icosahedral viral capsid
+salino	6	2417	13	4324	TAT protein transport complex
+salino	1	2417	2	4335	type II protein secretion system complex
+salino	1	2417	1	4336	virion membrane
