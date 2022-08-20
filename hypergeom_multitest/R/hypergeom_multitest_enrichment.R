@@ -23,14 +23,14 @@
 #' "p_less_than_cutoff" - YES / NO (whether the adjusted pvalue < cuttoff)
 #' @export
 #'
-#' \dontrun{
 #' @examples
+#' \dontrun{
 #' go_sample_counts <- read.csv("testdata.txt", sep = "\t", header = FALSE)
 #' colnames(go_sample_counts) <- c("sample_id", "go_of_interest_in_sample","total_gos_in_sample", "go_of_interest_in_pop", "other_gos_in_pop", "goterm_id")
 #' Bonferroni: The pvalues are multiplied by the number of comparisons
-#' result <- test_enrichment_hypergeom(go_sample_counts, "bonferroni")
+#' result <- hypergeom_test_enrichment(go_sample_counts, "bonferroni")
 #' }
-test_enrichment_hypergeom <- function(go_sample_counts, multitest_correction="", cutoff=0.05, verbose_output=TRUE){
+hypergeom_test_enrichment <- function(go_sample_counts, multitest_correction="", cutoff=0.05, verbose_output=TRUE){
   # q: hitInSample - The GO term of interest #go_of_interest_in_sample
   # m: hitInPop - How many times the GO of interest appears in the entire dataset #go_of_interest_in_pop
   # n: failInPop - How many GOs (not of interest) appear in the entire dataset #other_gos_in_pop
@@ -62,7 +62,7 @@ test_enrichment_hypergeom <- function(go_sample_counts, multitest_correction="",
     n <- go_sample_counts[i, "other_gos_in_pop"]
     res[i, "pvalue"] <- phyper(q - 1, m, n, k, lower.tail = FALSE) # p(X >= q)
     res[i, "note"] <- paste0(q,'(',m,')','/',k)
-    res[i, "adj_pvalue"] <- pval
+    res[i, "adj_pvalue"] <- res[i, "pvalue"]
   }
   
   if (multitest_correction != "") { 
@@ -70,7 +70,7 @@ test_enrichment_hypergeom <- function(go_sample_counts, multitest_correction="",
   }
   
   for (i in seq_len(nrow(go_sample_counts))) {
-    if(adjPval < cutoff){
+    if(res[i, "adj_pvalue"] < cutoff){
       res[i, "note"] <- "YES"
     }
   }
